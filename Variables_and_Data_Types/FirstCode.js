@@ -10,9 +10,9 @@ console.log("I hope you love javacript"); */
 // console.log(age);
 price = 99.91;
 // console.log(price);
-x = null;
+// x = null; Uncaught ReferenceError: Cannot access 'x' before initialization
 // console.log(x);
-y = undefined;
+// y = undefined; Uncaught ReferenceError: Cannot access 'y' before initialization
 // console.log(y);
 radius = 8721;
 isFollow = false;
@@ -56,3 +56,58 @@ const b = 235435;
 }
 // console.log("using variable defined inside a code block beyond that code block:");
 // console.log(varValue); //Uncaught ReferenceError: varValue is not defined
+
+// Data Types
+// A) Primitive Data Types
+// 1. number
+// console.log(age);
+// console.log(typeof age);
+// console.log(totalPrice);
+// console.log(typeof totalPrice);
+// console.log(price);
+// console.log(typeof price);
+// 2. string
+// console.log(fullName);
+// console.log(typeof fullName);
+// 3. boolean
+// console.log(isFollow);
+// console.log(typeof isFollow);
+// 4. undefined
+let x;
+// console.log(x);
+// console.log(typeof x);
+// 5. null (absence of object)
+let y = null;
+// console.log(y);
+// console.log(typeof y);
+// 6. bigint
+let bigIntValue = BigInt("325435643654765576668769121");
+// let bigIntValue = 325435643654765576668769121;
+/* Numeric literals with absolute values equal to 2^53 or 
+greater are too large to be represented accurately as integers.ts(80008) */
+// console.log(bigIntValue);
+// console.log(typeof bigIntValue);
+// 7. Symbol
+let symbolValue = Symbol("Jesus Christ");
+// console.log(symbolValue);
+// console.log(typeof symbolValue);
+
+// B) Non-primitive Data Types
+// 1. Objects
+const student = {
+    firstName : "Sarthak",
+    lastName : "Giri",
+    joiningAge : 18,
+    cgpa : 9.6,
+    isPass : true
+};
+console.log(student);
+console.log(typeof student);
+console.log(student["joiningAge"]);
+console.log(student.cgpa);
+
+student.joiningAge = student.joiningAge + 1;
+console.log(student.joiningAge);
+
+student.lastName = "Mahato";
+console.log(student);
