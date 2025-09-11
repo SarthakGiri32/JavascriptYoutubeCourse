@@ -1,14 +1,14 @@
 const profile = {
-    userName : "shradhakhapra",
+    userName : "@shradhakhapra",
     fullName : "Shradha Khapra",
     posts : 195,
     followers : 569000,
     following : 4,
-    threadsUserName : "shradhakhapra",
+    threadsUserName : "@shradhakhapra",
     category: "Entrepreneur",
     bio: "Apna College | Ex-Microsoft, DRDO\nTo educate someone is the highest privilege❤️",
     isFollow: false
-}
+};
 
 console.log("Username: " + profile.userName);
 console.log("Full Name: " + profile.fullName);
@@ -19,3 +19,5 @@ console.log("Following: " + profile.following);
 console.log("Threads Username: " + profile.threadsUserName);
 console.log("Category: " + profile.category);
 console.log("Bio:\n" + profile.bio);
+
+console.log(typeof profile.threadsUserName);
