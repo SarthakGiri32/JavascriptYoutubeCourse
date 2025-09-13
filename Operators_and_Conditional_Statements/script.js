@@ -50,18 +50,30 @@ let a = 23436565;
 let b = 8767684;
 let x = 5, y = 3;
 
-console.log("a == b :", a == b);
-console.log("a != b :", a != b);
+// console.log("a == b :", a == b);
+// console.log("a != b :", a != b);
 let num1 = 52342;
 let num2 = "52342";
-console.log("num1 == num2 :", num1 == num2);
-console.log("num1 != num2 :", num1 != num2);
-console.log("num1 === num2 :", num1 === num2);
-console.log("num1 !== num2 :", num1 !== num2);
+// console.log("num1 == num2 :", num1 == num2);
+// console.log("num1 != num2 :", num1 != num2);
+// console.log("num1 === num2 :", num1 === num2);
+// console.log("num1 !== num2 :", num1 !== num2);
 
-console.log("x > y :", x > y);
-console.log("x < y :", x < y);
+// console.log("x > y :", x > y);
+// console.log("x < y :", x < y);
 num1 = 456454;
 num2 = 9887;
-console.log("num1 <= num2 :", num1 <= num2);
-console.log("num1 >= num2 :", num1 >= num2);
+// console.log("num1 <= num2 :", num1 <= num2);
+// console.log("num1 >= num2 :", num1 >= num2);
+
+// 4. Logical Operators
+num1 = 56546;
+num2 = 23123;
+
+// let condition1 = num1 < num2;
+// let condition2 = num1 === 56546;
+// console.log("condition1 && condition2 =", condition1 && condition2);
+console.log("num1 < num2 && num1 === 56546 :", num1 < num2 && num1 === 56546);
+console.log("num1 < num2 || num1 === 56546 :", num1 < num2 || num1 === 56546);
+console.log("!(num1 < num2) :", !(num1 < num2));
+console.log("!(num1 === 56546) :", !(num1 === 56546));
