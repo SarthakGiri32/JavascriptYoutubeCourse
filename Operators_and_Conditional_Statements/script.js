@@ -105,8 +105,8 @@ in the console window */
 //     console.log("you cannot get a drivers licence");
 // }
 
-let mode = "dark";
-let color;
+// let mode = "dark";
+// let color;
 
 // if (mode === "dark") {
 //     color = "black";
@@ -117,13 +117,63 @@ let color;
 
 // console.log(color);
 
-mode = "light";
+// mode = "light";
 
-if (mode === "dark") {
-    color = "black";
-}
-if (mode === "light") {
-    color = "white";
-}
+// if (mode === "dark") {
+//     color = "black";
+// }
+// if (mode === "light") {
+//     color = "white";
+// }
 
-console.log(color);
+// console.log(color);
+
+// 2. if-else statement
+// if (mode === "dark") {
+//     color = "black";
+// } else {
+//     color = "white";
+// }
+
+// mode = "blue";
+
+// if (mode === "dark") {
+//     color = "black";
+// } else {
+//     color = "white";
+// }
+
+// console.log(color);
+
+// let age = 25;
+
+// if (age >= 18) {
+//     console.log("you can vote");
+// } else {
+//     console.log("you cannot vote");
+// }
+
+// age = 16;
+
+// if (age >= 18) {
+//     console.log("you can vote");
+// } else {
+//     console.log("you cannot vote");
+// }
+
+// odd or even:
+let n = 10;
+
+// if (n % 2 === 0) {
+//     console.log(n + " is even");
+// } else {
+//     console.log(n + " is odd");
+// }
+
+n = 35;
+
+if (n % 2 === 0) {
+    console.log(n + " is even");
+} else {
+    console.log(n + " is odd");
+}
