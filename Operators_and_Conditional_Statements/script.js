@@ -78,6 +78,19 @@ in the console window */
 // console.log("!(num1 < num2) :", !(num1 < num2));
 // console.log("!(num1 === 56546) :", !(num1 === 56546));
 
+// 5. Ternary Operators
+let age = 44;
+
+// let ternaryOpResult = age >= 18 ? "you can get a drivers license" : "you can't get a drivers license";
+// console.log(ternaryOpResult);
+
+age = 17;
+// console.log(age >= 18 ? "you can get a drivers license" : "you can't get a drivers license");
+// age >= 18 ? console.log("you can get a drivers license") : console.log("you can't get a drivers license");
+
+age = 19;
+age >= 18 ? console.log("you can get a drivers license") : console.log("you can't get a drivers license");
+
 // III) Conditional Statements in JS
 // 1. if statement
 // let age = 25;
@@ -179,8 +192,8 @@ in the console window */
 // }
 
 // 3. if-else-if-else statement
-let mode = "dark";
-let color;
+// let mode = "dark";
+// let color;
 
 // if (mode === "dark") {
 //     color = "black";
@@ -218,5 +231,5 @@ let color;
 
 // console.log(color);
 
-if (mode === "dark") console.log(mode); 
+// if (mode === "dark") console.log(mode); 
 // consice mode of writing conditional statement code; not good coding practice
