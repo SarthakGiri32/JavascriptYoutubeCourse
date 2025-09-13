@@ -46,14 +46,14 @@ in the console window */
 // console.log("y =", y);
 
 // 3. Comparison Operators
-let a = 23436565;
-let b = 8767684;
-let x = 5, y = 3;
+// let a = 23436565;
+// let b = 8767684;
+// let x = 5, y = 3;
 
 // console.log("a == b :", a == b);
 // console.log("a != b :", a != b);
-let num1 = 52342;
-let num2 = "52342";
+// let num1 = 52342;
+// let num2 = "52342";
 // console.log("num1 == num2 :", num1 == num2);
 // console.log("num1 != num2 :", num1 != num2);
 // console.log("num1 === num2 :", num1 === num2);
@@ -61,19 +61,69 @@ let num2 = "52342";
 
 // console.log("x > y :", x > y);
 // console.log("x < y :", x < y);
-num1 = 456454;
-num2 = 9887;
+// num1 = 456454;
+// num2 = 9887;
 // console.log("num1 <= num2 :", num1 <= num2);
 // console.log("num1 >= num2 :", num1 >= num2);
 
 // 4. Logical Operators
-num1 = 56546;
-num2 = 23123;
+// num1 = 56546;
+// num2 = 23123;
 
 // let condition1 = num1 < num2;
 // let condition2 = num1 === 56546;
 // console.log("condition1 && condition2 =", condition1 && condition2);
-console.log("num1 < num2 && num1 === 56546 :", num1 < num2 && num1 === 56546);
-console.log("num1 < num2 || num1 === 56546 :", num1 < num2 || num1 === 56546);
-console.log("!(num1 < num2) :", !(num1 < num2));
-console.log("!(num1 === 56546) :", !(num1 === 56546));
+// console.log("num1 < num2 && num1 === 56546 :", num1 < num2 && num1 === 56546);
+// console.log("num1 < num2 || num1 === 56546 :", num1 < num2 || num1 === 56546);
+// console.log("!(num1 < num2) :", !(num1 < num2));
+// console.log("!(num1 === 56546) :", !(num1 === 56546));
+
+// III) Conditional Statements in JS
+// 1. if statement
+// let age = 25;
+
+// if (age > 18) {
+//     console.log("you can get a drivers licence");
+// }
+
+// age = 16;
+
+// if (age >= 18) {
+//     console.log("you can get a drivers licence");
+// }
+
+// if (age < 18) {
+//     console.log("you cannot get a drivers licence");
+// }
+
+// age = 18;
+
+// if (age >= 18) {
+//     console.log("you can get a drivers licence");
+// }
+// if (age < 18) {
+//     console.log("you cannot get a drivers licence");
+// }
+
+let mode = "dark";
+let color;
+
+// if (mode === "dark") {
+//     color = "black";
+// }
+// if (mode === "light") {
+//     color = "white";
+// }
+
+// console.log(color);
+
+mode = "light";
+
+if (mode === "dark") {
+    color = "black";
+}
+if (mode === "light") {
+    color = "white";
+}
+
+console.log(color);
