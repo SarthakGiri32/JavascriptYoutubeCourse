@@ -162,7 +162,7 @@ in the console window */
 // }
 
 // odd or even:
-let n = 10;
+// let n = 10;
 
 // if (n % 2 === 0) {
 //     console.log(n + " is even");
@@ -170,10 +170,53 @@ let n = 10;
 //     console.log(n + " is odd");
 // }
 
-n = 35;
+// n = 35;
 
-if (n % 2 === 0) {
-    console.log(n + " is even");
-} else {
-    console.log(n + " is odd");
-}
+// if (n % 2 === 0) {
+//     console.log(n + " is even");
+// } else {
+//     console.log(n + " is odd");
+// }
+
+// 3. if-else-if-else statement
+let mode = "dark";
+let color;
+
+// if (mode === "dark") {
+//     color = "black";
+// } else if (mode === "blue") {
+//     color = "blue";
+// } else if (mode === "violet") {
+//     color = "violet";
+// } else {
+//     color = "white";
+// }
+
+// mode = "violet";
+
+// if (mode === "dark") {
+//     color = "black";
+// } else if (mode === "blue") {
+//     color = "blue";
+// } else if (mode === "violet") {
+//     color = "violet";
+// } else {
+//     color = "white";
+// }
+
+// mode = "bronze";
+
+// if (mode === "dark") {
+//     color = "black";
+// } else if (mode === "blue") {
+//     color = "blue";
+// } else if (mode === "violet") {
+//     color = "violet";
+// } else {
+//     color = "white";
+// }
+
+// console.log(color);
+
+if (mode === "dark") console.log(mode); 
+// consice mode of writing conditional statement code; not good coding practice
