@@ -66,8 +66,27 @@ to use the loop iteration variable outside the for loop*/
 // } while (i <= n);
 
 // Print integers 1 to n
-let i = 1, n = 20;
-do {
-    console.log("i = " + i);
-    i++;
-} while (i <= n);
+// let i = 1, n = 20;
+// do {
+//     console.log("i = " + i);
+//     i++;
+// } while (i <= n);
+
+// 4. for-of loop
+// used for looping over a sequence of elements present in an iterable object (strings, arrays, etc)
+// let strIterable = "Welcome to for-of iteration";
+/* for-of internally handles loop iteration variable initialization, checking stopping condition, 
+   and updating the loop iteration variable */
+// for (let strChar of strIterable) {
+//     console.log("strChar =", strChar);
+// }
+
+// can also be used to calculate length of strings (without using javascript built-in functions)
+// let strLength = 0;
+// for (let strChar of strIterable) {
+//     console.log("strChar =", strChar);
+//     strLength++;
+// }
+// console.log("Length of the string is " + strLength);
+
+
