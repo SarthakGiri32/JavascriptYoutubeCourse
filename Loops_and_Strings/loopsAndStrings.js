@@ -43,8 +43,31 @@ to use the loop iteration variable outside the for loop*/
 // }
 
 // Print a console log statement n times
-let i = 1, n = 300;
-while (i <= n) {
-    console.log("Welcome to while loop");
+// let i = 1, n = 300;
+// while (i <= n) {
+//     console.log("Welcome to while loop");
+//     i++;
+// }
+
+// if the condition is false, the while loop will not run (unlike do-while)
+// let i = 1000, n = 300;
+// while (i <= n) {
+//     console.log("Welcome to while loop");
+//     i++;
+// }
+
+// 3. Do-while loop
+// Print a console log statement n times
+// the loop code block will be executed atleast once, even if the condition is false
+// let i = 1000, n = 300;
+// do {
+//     console.log("Welcome to while loop");
+//     i++;
+// } while (i <= n);
+
+// Print integers 1 to n
+let i = 1, n = 20;
+do {
+    console.log("i = " + i);
     i++;
-}
+} while (i <= n);
