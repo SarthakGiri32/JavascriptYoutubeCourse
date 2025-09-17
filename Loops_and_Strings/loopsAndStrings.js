@@ -28,8 +28,23 @@ to use the loop iteration variable outside the for loop*/
 // console.log("Value of i after loop completion = " + i);
 
 // or, declare i with let outside for loop to avoid using var (old standard)
-let i;
-for (i = 1; i <= 20; i++) {
-    console.log("i = " + i);
+// let i;
+// for (i = 1; i <= 20; i++) {
+//     console.log("i = " + i);
+// }
+// console.log("Value of i after loop completion = " + i);
+
+// 2. While loop
+// Print integers from 1 to n
+// let i = 1, n = 20;
+// while (i <= n) {
+//     console.log("i = " + i);
+//     i++;
+// }
+
+// Print a console log statement n times
+let i = 1, n = 300;
+while (i <= n) {
+    console.log("Welcome to while loop");
+    i++;
 }
-console.log("Value of i after loop completion = " + i);
