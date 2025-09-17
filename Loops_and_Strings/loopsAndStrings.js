@@ -89,4 +89,16 @@ to use the loop iteration variable outside the for loop*/
 // }
 // console.log("Length of the string is " + strLength);
 
+// 5. for-in loop
+/* The for...in statement iterates over all enumerable string properties of an object 
+(ignoring properties keyed by symbols), including inherited enumerable properties. */
+const student = {
+    name: "Sarthak Giri",
+    age: 17,
+    cgpa: 9.8,
+    isPass: true
+}
 
+for (let studentKey in student) {
+    console.log("student." + studentKey + " : " + student[studentKey]);
+}
