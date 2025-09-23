@@ -22,3 +22,7 @@ console.log(`The cost of a ${exampleObject.item} = ₹${exampleObject.price}`); 
 // Escape characters
 // a) \n
 console.log("Welcome to using newline escape character\nto the second line");
+
+// b) \t
+console.log("This is a\ttab space");
+console.log("This is a\ttab space".length); // escape characters are counted as single characters
