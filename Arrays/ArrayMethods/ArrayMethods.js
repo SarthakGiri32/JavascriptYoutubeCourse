@@ -62,9 +62,28 @@ let newBibleCharactersLength = bibleCharacters.push("Mary", "Matthew", "Mark", "
 // console.table(bibleCharacters);
 
 // VII) slice()
-let slicedBibleChars = bibleCharacters.slice(3, -4);
-console.log("A slice of the bible characters array:");
-console.table(slicedBibleChars);
-slicedBibleChars = bibleCharacters.slice(-9, -2);
-console.log("\nAnother slice of the bible characters array:");
-console.table(slicedBibleChars);
+// let slicedBibleChars = bibleCharacters.slice(3, -4);
+// console.log("A slice of the bible characters array:");
+// console.table(slicedBibleChars);
+// slicedBibleChars = bibleCharacters.slice(-9, -2);
+// console.log("\nAnother slice of the bible characters array:");
+// console.table(slicedBibleChars);
+
+// VIII) splice()
+let bibleCharactersCopy = bibleCharacters.slice();
+let deletedElementsArray = bibleCharactersCopy.splice(4, 2);
+console.log("The deleted array elements");
+console.log(deletedElementsArray);
+console.log("\nThe modified array copy");
+console.table(bibleCharactersCopy);
+console.log("\nThe original un-modified array");
+console.table(bibleCharacters);
+
+bibleCharactersCopy = bibleCharacters.slice();
+deletedElementsArray = bibleCharactersCopy.splice(7, 5, "Elijah", "Isaiah", "Micah", "Job");
+console.log("\n\nDifferent deleted array elements");
+console.log(deletedElementsArray);
+console.log("\Different modified array copy");
+console.table(bibleCharactersCopy);
+console.log("\nThe original un-modified array");
+console.table(bibleCharacters);
