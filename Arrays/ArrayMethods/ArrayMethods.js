@@ -46,17 +46,25 @@ let newBibleCharactersLength = bibleCharacters.push("Mary", "Matthew", "Mark", "
 // console.log("Fourth unshift call:");
 // console.log(arr);
 
-let unshiftBibleCharsLength = bibleCharacters.unshift("Adam", "Eve", "Enoch", "Noah");
-console.log("The unshifted bible characters array:");
-console.table(bibleCharacters);
+// let unshiftBibleCharsLength = bibleCharacters.unshift("Adam", "Eve", "Enoch", "Noah");
+// console.log("The unshifted bible characters array:");
+// console.table(bibleCharacters);
 
 // VI) shift()
-let removedBibleCharacterFromStart, removedBibleCharCount = 0;
-do {
-    removedBibleCharCount++;
-    removedBibleCharacterFromStart = bibleCharacters.shift();
-    console.log(`Removed bible character ${removedBibleCharCount}: ${removedBibleCharacterFromStart}`);
-} while (removedBibleCharacterFromStart !== "Noah");
+// let removedBibleCharacterFromStart, removedBibleCharCount = 0;
+// do {
+//     removedBibleCharCount++;
+//     removedBibleCharacterFromStart = bibleCharacters.shift();
+//     console.log(`Removed bible character ${removedBibleCharCount}: ${removedBibleCharacterFromStart}`);
+// } while (removedBibleCharacterFromStart !== "Noah");
 
-console.log("\nThe shifted bible characters array:");
-console.table(bibleCharacters);
+// console.log("\nThe shifted bible characters array:");
+// console.table(bibleCharacters);
+
+// VII) slice()
+let slicedBibleChars = bibleCharacters.slice(3, -4);
+console.log("A slice of the bible characters array:");
+console.table(slicedBibleChars);
+slicedBibleChars = bibleCharacters.slice(-9, -2);
+console.log("\nAnother slice of the bible characters array:");
+console.table(slicedBibleChars);
