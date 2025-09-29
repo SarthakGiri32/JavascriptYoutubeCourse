@@ -1,4 +1,4 @@
-// I) push()
+// // I) push()
 let bibleCharacters = ["Abraham", "Isaac", "Jacob", "Moses", "Aaron", "Joseph", "David", "Jesus Christ"];
 let newBibleCharactersLength = bibleCharacters.push("Mary", "Matthew", "Mark", "Luke", "John");
 // console.log(`The changed array with new length of ${newBibleCharactersLength}:`);
@@ -17,7 +17,46 @@ let newBibleCharactersLength = bibleCharacters.push("Mary", "Matthew", "Mark", "
 // implicitly called since array is represented as a text value
 
 // IV) concat()
-let wondersOfTheWorld = ["Taj Mahal", "Great Wall of China", "Christ the Redeemer", "Chichen Itza", "Petra", "Macchu Pichu", "Colosseum", "Calvary"];
-let combinedWondersAndBibleCharacters = wondersOfTheWorld.concat(bibleCharacters, ["James", "Peter", "John", "Paul"]);
-console.log("The combined arrays of wonders of the world and bible characters:");
-console.table(combinedWondersAndBibleCharacters);
+// let wondersOfTheWorld = ["Taj Mahal", "Great Wall of China", "Christ the Redeemer", "Chichen Itza", "Petra", "Macchu Pichu", "Colosseum", "Calvary"];
+// let combinedWondersAndBibleCharacters = wondersOfTheWorld.concat(bibleCharacters, ["James", "Peter", "John", "Paul"]);
+// console.log("The combined arrays of wonders of the world and bible characters:");
+// console.table(combinedWondersAndBibleCharacters);
+
+// V) unshift()
+// mdn docs example
+// const arr = [1, 2];
+
+// arr.unshift(0); // result of the call is 3, which is the new array length
+// // arr is [0, 1, 2]
+// console.log("First unshift call:");
+// console.log(arr);
+
+// arr.unshift(-2, -1); // the new array length is 5
+// // arr is [-2, -1, 0, 1, 2]
+// console.log("Second unshift call:");
+// console.log(arr);
+
+// arr.unshift([-4, -3]); // the new array length is 6
+// // arr is [[-4, -3], -2, -1, 0, 1, 2]
+// console.log("Third unshift call:");
+// console.log(arr);
+
+// arr.unshift([-7, -6], [-5]); // the new array length is 8
+// // arr is [ [-7, -6], [-5], [-4, -3], -2, -1, 0, 1, 2 ]
+// console.log("Fourth unshift call:");
+// console.log(arr);
+
+let unshiftBibleCharsLength = bibleCharacters.unshift("Adam", "Eve", "Enoch", "Noah");
+console.log("The unshifted bible characters array:");
+console.table(bibleCharacters);
+
+// VI) shift()
+let removedBibleCharacterFromStart, removedBibleCharCount = 0;
+do {
+    removedBibleCharCount++;
+    removedBibleCharacterFromStart = bibleCharacters.shift();
+    console.log(`Removed bible character ${removedBibleCharCount}: ${removedBibleCharacterFromStart}`);
+} while (removedBibleCharacterFromStart !== "Noah");
+
+console.log("\nThe shifted bible characters array:");
+console.table(bibleCharacters);
