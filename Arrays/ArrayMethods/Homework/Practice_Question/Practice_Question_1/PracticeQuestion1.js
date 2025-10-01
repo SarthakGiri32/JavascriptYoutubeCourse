@@ -12,4 +12,4 @@ console.log(`Companies array after removing "Uber" and adding "Ola" in its place
 
 // Add Amazon at the end
 companies.push("Amazon");
-console.log(`Adding "Amazon" to the end of the companies array: ${companies}`)
+console.log(`Adding "Amazon" to the end of the companies array: ${companies}`);
