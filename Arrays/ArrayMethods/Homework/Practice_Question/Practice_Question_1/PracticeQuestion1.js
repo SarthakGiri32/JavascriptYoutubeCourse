@@ -4,7 +4,7 @@ let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
 // remove first company from array
 console.log(`Original companies: ${companies}`);
 companies.shift();
-console.log(`Companies array after removing first element: ${companies}`)
+console.log(`Companies array after removing first element: ${companies}`);
 
 // Replace "Uber" with "Ola"
 companies.splice(companies.indexOf("Uber"), 1, "Ola");
