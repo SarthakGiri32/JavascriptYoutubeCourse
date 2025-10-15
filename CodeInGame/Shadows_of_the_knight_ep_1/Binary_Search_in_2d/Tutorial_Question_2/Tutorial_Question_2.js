@@ -20,17 +20,34 @@ function oneDArrayBinSort(lb, rb, searchTarget, sortedArray) {
         else if (sortedArray[mid] > searchTarget) {
             rb = mid - 1;
         }
-        else if (sortedArray[mid] < searchTarget) {
+        else {
             lb = mid + 1;
         }
     }
     return false;
 }
 
+// while (lbr <= ubr) {
+//     targetFound = oneDArrayBinSort(0, strictlySortedMatrix[mr].length - 1, target, strictlySortedMatrix[mr]);
+//     if(targetFound) {
+//         break;
+//     }
+//     else if (strictlySortedMatrix[mr][mc] > target) {
+//         ubr = mr - 1;
+//     }
+//     else if (strictlySortedMatrix[mr][mc] < target) {
+//         lbr = mr + 1;
+//     }
+//     mr = Math.floor((lbr + ubr) / 2);
+// }
+
+// code suggested by a youtube comment; same time complexity as teacher's complicated code
 while (lbr <= ubr) {
-    targetFound = oneDArrayBinSort(0, strictlySortedMatrix[mr].length - 1, target, strictlySortedMatrix[mr]);
-    if(targetFound) {
-        break;
+    if (target >= strictlySortedMatrix[mr][0] && target <= strictlySortedMatrix[mr][strictlySortedMatrix[mr].length - 1]){
+        targetFound = oneDArrayBinSort(0, strictlySortedMatrix[mr].length - 1, target, strictlySortedMatrix[mr]);
+        if(targetFound) {
+            break;
+        }
     }
     else if (strictlySortedMatrix[mr][mc] > target) {
         ubr = mr - 1;
@@ -39,6 +56,6 @@ while (lbr <= ubr) {
         lbr = mr + 1;
     }
     mr = Math.floor((lbr + ubr) / 2);
-} 
+}
 
 console.log(targetFound? `Target ${target} found at location strictlySortedMatrix[${mr}][${searchLoc}]` : `Target ${target} not found`);  
