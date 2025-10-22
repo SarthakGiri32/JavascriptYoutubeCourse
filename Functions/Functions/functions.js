@@ -48,7 +48,19 @@ function getSumOfTwoNumbers(a, b) {
     return a + b; // function parameters a and b exist only within the function block (block scope)
 }
 
-let total1 = getSumOfTwoNumbers(123346788, 987661);
-let total2 = getSumOfTwoNumbers(91.313, 86.2348);
-console.log(`${123346788} + ${987661} = ${total1}`);
-console.log(`${91.313} + ${86.2348} = ${total2}`);
+// let total1 = getSumOfTwoNumbers(123346788, 987661);
+// let total2 = getSumOfTwoNumbers(91.313, 86.2348);
+// console.log(`${123346788} + ${987661} = ${total1}`);
+// console.log(`${91.313} + ${86.2348} = ${total2}`);
+
+//II) Arrow functions
+/**
+ * Arrow function stored in a variable to calculate sum of 2 numbers
+ * @param {number} num1 
+ * @param {number} num2 
+ * @returns sum of num1 and num2
+ */
+const numberSum = (num1, num2) => num1 + num2; // return is not needed for single expression in arrow functions
+// In a block body (using curly brackets), must use an explicit return statement.
+
+console.log(`${234113} + ${75441} = ${numberSum(234113, 75441)}`)
