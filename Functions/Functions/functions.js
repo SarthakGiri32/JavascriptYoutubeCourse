@@ -35,5 +35,20 @@ function sumOfTwoNumbers(a, b) {
     console.log(`${a} + ${b} = ${a + b}`);
 }
 
-sumOfTwoNumbers(123346788, 987661);
-sumOfTwoNumbers(91313, 86.2348);
+// sumOfTwoNumbers(123346788, 987661);
+// sumOfTwoNumbers(91313, 86.2348);
+
+/**
+ * A function to calculate the sum of two numbers (integer or floating point) and return it
+ * to the variable calling the function
+ * @param {number} a : the first number
+ * @param {number} b : the second number
+ */
+function getSumOfTwoNumbers(a, b) {
+    return a + b; // function parameters a and b exist only within the function block (block scope)
+}
+
+let total1 = getSumOfTwoNumbers(123346788, 987661);
+let total2 = getSumOfTwoNumbers(91.313, 86.2348);
+console.log(`${123346788} + ${987661} = ${total1}`);
+console.log(`${91.313} + ${86.2348} = ${total2}`);
