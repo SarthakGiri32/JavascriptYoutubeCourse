@@ -73,5 +73,15 @@ const numberSum = (num1, num2) => num1 + num2; // return is not needed for singl
  */
 const productOfTwoNums = (x, y) => x * y;
 
-console.log(`${65} * ${75} = ${productOfTwoNums(65, 75)}`);
+// console.log(`${65} * ${75} = ${productOfTwoNums(65, 75)}`);
 
+//III) forEach() method in Arrays (a method is a function associated with an object or another data structure)
+let arrayEg = [123, 454, 88234, 9];
+const printArrayElems = (element, index) => console.log(`a[${index}] : ${element}`);
+
+['SarthakG', 'Bokka', 'Central Knot City'].forEach(printArrayElems);
+arrayEg.forEach(printArrayElems);
+
+/* In Javascript, functions can be assigned to variables in the same way that strings or arrays can. 
+They can be passed into other functions as parameters or returned from them as well.
+A “higher-order function” is a function that accepts functions as parameters and/or returns a function. */
