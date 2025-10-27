@@ -56,11 +56,22 @@ function getSumOfTwoNumbers(a, b) {
 //II) Arrow functions
 /**
  * Arrow function stored in a variable to calculate sum of 2 numbers
- * @param {number} num1 
- * @param {number} num2 
+ * @param {number} num1 : the first number
+ * @param {number} num2 : the second number
  * @returns sum of num1 and num2
  */
 const numberSum = (num1, num2) => num1 + num2; // return is not needed for single expression in arrow functions
 // In a block body (using curly brackets), must use an explicit return statement.
 
-console.log(`${234113} + ${75441} = ${numberSum(234113, 75441)}`)
+// console.log(`${234113} + ${75441} = ${numberSum(234113, 75441)}`);
+
+/**
+ * Arrow function for calculating the product of two numbers
+ * @param {number} x 
+ * @param {number} y 
+ * @returns the product of x and y
+ */
+const productOfTwoNums = (x, y) => x * y;
+
+console.log(`${65} * ${75} = ${productOfTwoNums(65, 75)}`);
+
