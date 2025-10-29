@@ -113,7 +113,7 @@ filtered down to just the elements from the given array that pass the test imple
 // console.log(`namesList: ${JSON.stringify(namesList)}`);
 // console.log(`arrayOfFilteredNames: ${JSON.stringify(arrayOfFilteredNames)}`);
 
-const numberArr = [23423, 81, 99, 35, 36, 96, 48, 75, 88236, 77871, 255];
+// const numberArr = [23423, 81, 99, 35, 36, 96, 48, 75, 88236, 77871, 255];
 // const filteredForThree = numberArr.filter(element => element % 3 === 0);
 // console.log(`numberArr: ${JSON.stringify(numberArr)}`);
 // console.log(`filteredForThree: ${JSON.stringify(filteredForThree)}`);
@@ -129,5 +129,6 @@ If supplied, an initial value may be used in its place. Otherwise the array elem
 and iteration starts from the next element (index 1 instead of index 0).
 */
 
+const numberArr = [81, 99, 35, 36, 96, 48, 75, 1, 3, 5, 9, 10, 22, 28, 27, 42, 45, 53, 68];
 let total = numberArr.filter(element => element % 3 === 0).reduce((totalOfMultiplesOfThree, val) => totalOfMultiplesOfThree + val);
 console.log(`Total after filtering for multiples of 3 and adding the multiples: ${total}`);
