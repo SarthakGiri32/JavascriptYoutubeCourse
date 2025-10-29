@@ -77,7 +77,7 @@ const productOfTwoNums = (x, y) => x * y;
 
 //III) Array methods
 //a) forEach() method in Arrays (a method is a function associated with an object or another data structure)
-let arrayEg = [123, 454, 88234, 9];
+// let arrayEg = [123, 454, 88234, 9];
 // const printArrayElems = (element, index) => console.log(`a[${index}] : ${element}`);
 
 // ['SarthakG', 'Bokka', 'Central Knot City'].forEach(printArrayElems);
@@ -90,9 +90,9 @@ A “higher-order function” is a function that accepts functions as parameters
 //b) map() method
 /*The map() method of Array instances creates a new array 
 populated with the results of calling a provided function on every element in the calling array.*/
-let newModifiedArray = arrayEg.map(val => val / 81);
-console.log(`arrayEg: ${JSON.stringify(arrayEg)}`);
-console.log(`newModifiedArray: ${JSON.stringify(newModifiedArray)}`);
+// let newModifiedArray = arrayEg.map(val => val / 81);
+// console.log(`arrayEg: ${JSON.stringify(arrayEg)}`);
+// console.log(`newModifiedArray: ${JSON.stringify(newModifiedArray)}`);
 
 // arrayEg.map(val => console.log(val)); prints the values, but if stored in a new array, its populated with null
 
@@ -105,4 +105,15 @@ console.log(`newModifiedArray: ${JSON.stringify(newModifiedArray)}`);
 // const kvModifiedArray = kvArray.map(({ key, value }) => ({ [key]: value }));
 // console.log(kvModifiedArray);
 
+//c) filter() method
+/*The filter() method of Array instances creates a shallow copy of a portion of a given array, 
+filtered down to just the elements from the given array that pass the test implemented by the provided function.*/
+const namesList = ['Alpha', 'Beta', 'Gamma', 'Delta', 'Omega', 'First', 'Last'];
+const arrayOfFilteredNames = namesList.filter(val => val.length > 4);
+console.log(`namesList: ${JSON.stringify(namesList)}`);
+console.log(`arrayOfFilteredNames: ${JSON.stringify(arrayOfFilteredNames)}`);
 
+const numberArr = [23423, 81, 99, 35, 36, 96, 48, 75, 88236, 77871, 255];
+const filteredForThree = numberArr.filter(element => element % 3 === 0);
+console.log(`numberArr: ${JSON.stringify(numberArr)}`);
+console.log(`filteredForThree: ${JSON.stringify(filteredForThree)}`);
