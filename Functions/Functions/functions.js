@@ -108,12 +108,26 @@ populated with the results of calling a provided function on every element in th
 //c) filter() method
 /*The filter() method of Array instances creates a shallow copy of a portion of a given array, 
 filtered down to just the elements from the given array that pass the test implemented by the provided function.*/
-const namesList = ['Alpha', 'Beta', 'Gamma', 'Delta', 'Omega', 'First', 'Last'];
-const arrayOfFilteredNames = namesList.filter(val => val.length > 4);
-console.log(`namesList: ${JSON.stringify(namesList)}`);
-console.log(`arrayOfFilteredNames: ${JSON.stringify(arrayOfFilteredNames)}`);
+// const namesList = ['Alpha', 'Beta', 'Gamma', 'Delta', 'Omega', 'First', 'Last'];
+// const arrayOfFilteredNames = namesList.filter(val => val.length > 4);
+// console.log(`namesList: ${JSON.stringify(namesList)}`);
+// console.log(`arrayOfFilteredNames: ${JSON.stringify(arrayOfFilteredNames)}`);
 
 const numberArr = [23423, 81, 99, 35, 36, 96, 48, 75, 88236, 77871, 255];
-const filteredForThree = numberArr.filter(element => element % 3 === 0);
-console.log(`numberArr: ${JSON.stringify(numberArr)}`);
-console.log(`filteredForThree: ${JSON.stringify(filteredForThree)}`);
+// const filteredForThree = numberArr.filter(element => element % 3 === 0);
+// console.log(`numberArr: ${JSON.stringify(numberArr)}`);
+// console.log(`filteredForThree: ${JSON.stringify(filteredForThree)}`);
+
+//d) reduce() method
+/*
+The reduce() method of Array instances executes a user-supplied "reducer" callback function on each element of the array, 
+in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer 
+across all elements of the array is a single value.
+
+The first time that the callback is run there is no "return value of the previous calculation". 
+If supplied, an initial value may be used in its place. Otherwise the array element at index 0 is used as the initial value 
+and iteration starts from the next element (index 1 instead of index 0).
+*/
+
+let total = numberArr.filter(element => element % 3 === 0).reduce((totalOfMultiplesOfThree, val) => totalOfMultiplesOfThree + val);
+console.log(`Total after filtering for multiples of 3 and adding the multiples: ${total}`);
