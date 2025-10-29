@@ -75,13 +75,34 @@ const productOfTwoNums = (x, y) => x * y;
 
 // console.log(`${65} * ${75} = ${productOfTwoNums(65, 75)}`);
 
-//III) forEach() method in Arrays (a method is a function associated with an object or another data structure)
+//III) Array methods
+//a) forEach() method in Arrays (a method is a function associated with an object or another data structure)
 let arrayEg = [123, 454, 88234, 9];
-const printArrayElems = (element, index) => console.log(`a[${index}] : ${element}`);
+// const printArrayElems = (element, index) => console.log(`a[${index}] : ${element}`);
 
-['SarthakG', 'Bokka', 'Central Knot City'].forEach(printArrayElems);
-arrayEg.forEach(printArrayElems);
+// ['SarthakG', 'Bokka', 'Central Knot City'].forEach(printArrayElems);
+// arrayEg.forEach(printArrayElems);
 
 /* In Javascript, functions can be assigned to variables in the same way that strings or arrays can. 
 They can be passed into other functions as parameters or returned from them as well.
 A “higher-order function” is a function that accepts functions as parameters and/or returns a function. */
+
+//b) map() method
+/*The map() method of Array instances creates a new array 
+populated with the results of calling a provided function on every element in the calling array.*/
+let newModifiedArray = arrayEg.map(val => val / 81);
+console.log(`arrayEg: ${JSON.stringify(arrayEg)}`);
+console.log(`newModifiedArray: ${JSON.stringify(newModifiedArray)}`);
+
+// arrayEg.map(val => console.log(val)); prints the values, but if stored in a new array, its populated with null
+
+// const kvArray = [
+//   { key: 1, value: 10 },
+//   { key: 2, value: 20 },
+//   { key: 3, value: 30 },
+// ];
+
+// const kvModifiedArray = kvArray.map(({ key, value }) => ({ [key]: value }));
+// console.log(kvModifiedArray);
+
+
