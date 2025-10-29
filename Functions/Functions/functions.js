@@ -132,3 +132,10 @@ and iteration starts from the next element (index 1 instead of index 0).
 const numberArr = [81, 99, 35, 36, 96, 48, 75, 1, 3, 5, 9, 10, 22, 28, 27, 42, 45, 53, 68];
 let total = numberArr.filter(element => element % 3 === 0).reduce((totalOfMultiplesOfThree, val) => totalOfMultiplesOfThree + val);
 console.log(`Total after filtering for multiples of 3 and adding the multiples: ${total}`);
+console.log(`numberArr: ${JSON.stringify(numberArr)}`);
+
+const maxValue = numberArr.reduce((maxNum, element) => maxNum < element? element : maxNum);
+console.log(`Maximum value in the array: ${maxValue}`);
+
+const minValue = numberArr.reduce((minNum, element) => minNum > element? element : minNum);
+console.log(`Minimum value in the array: ${minValue}`);
