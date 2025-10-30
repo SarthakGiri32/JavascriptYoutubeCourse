@@ -1,0 +1,14 @@
+h2 {
+    color: blueviolet;
+    text-decoration: underline;
+    background-color: aqua;
+}
+
+body {
+    background-color: bisque;
+}
+
+button {
+    background-color: red;
+    color: azure;
+}
